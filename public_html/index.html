@@ -8,13 +8,18 @@ Created 21 March 2014 by Paul Savage
         <title>Javascript</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function init()
+            {
+                // Statements to be executed go here
+                document.getElementById("panel").innerHTML = "Hello...from a Head Section JavaScript Block";
+                window.alert("Document Loaded!");
+            }
+        </script>
     </head>
-    <body onload="window.alert('Document Loaded!');">
+    <body onload="init()">
         <div id="panel">
-            <script type="text/javascript">
-                document.write("Hello World!");
-            </script>    
-            <noscript>Javacript is Not Enabled!</noscript>
+            
         </div>
     </body>
 </html>
